@@ -20,7 +20,9 @@ int main()
 			t.insert_O();
 		t.show();
 	}
-	while(!t.check_win());
+	while(!t.check_win() && t.end());
+	if(!t.end())
+		std::cout<<"The match finished with a draw!"<<std::endl;
 	system("PAUSE");
 	return 0;
 }

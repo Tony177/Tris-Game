@@ -25,8 +25,10 @@ namespace antonioa
 		//CONSTANT MEMBER FUNCTION
 		int turn() const {return player;};
 		char value(size_t i,size_t j) const {return board[i][j];};
+		bool end() const {return round<9;};
 	private:
 		char board[row][column];
+		size_t round;
 		int player; // X player its 1 and  O player its 0
 	};
 }

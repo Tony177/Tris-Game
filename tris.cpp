@@ -17,6 +17,7 @@ namespace antonioa
 			for(size_t j=0;j<column;j++)
 					board[i][j]='\0';
 		player=1;
+		round=0;
 	}
 	void tris::show()
 	{
@@ -120,6 +121,7 @@ namespace antonioa
 				cout<<"Wrong selection!"<<endl;
 				return;
 		}
+		round++;
 		player=0;
 	}
 	void tris::insert_O()
@@ -214,6 +216,7 @@ namespace antonioa
 				cout<<"Wrong selection!"<<endl;
 				return;
 			}
+			round++;
 			player=1;
 		}
 	bool tris::check_win()
