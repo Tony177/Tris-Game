@@ -11,19 +11,14 @@ using namespace antonioa;
 int main()
 {
 	tris t;
+	char answer;
 	do
 	{
-
-		if(t.turn()==1)
-			t.insert_X();
-		else
-			t.insert_O();
-		t.show();
-	}
-	while(!t.check_win() && t.end());
-	if(!t.end())
-		std::cout<<"The match finished with a draw!"<<std::endl;
-	system("PAUSE");
+		t.play();
+		std::cout<<std::endl;
+		std::cout<<"Want to play another game? Y/N:";
+		std::cin>>answer;
+	} while(answer=='Y');
 	return 0;
 }
 
