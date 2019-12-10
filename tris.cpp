@@ -28,6 +28,21 @@ namespace antonioa
 		cout<<" "<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<endl;
 			cout<<endl<<endl<<endl<<endl;
 	}
+	void tris::play()
+	{
+		do
+		{
+
+			if(turn()==1)
+				insert_X();
+			else
+				insert_O();
+			show();
+		}
+		while(!check_win() && end());
+		if(!end())
+			std::cout<<"The match finished with a draw!"<<std::endl;
+	}
 	void tris::insert_X()
 	{
 		int pos;

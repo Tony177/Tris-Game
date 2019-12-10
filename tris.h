@@ -19,6 +19,7 @@ namespace antonioa
 		//MODIFICATION MEMBER FUNCTION
 		tris();
 		void show();
+		void play();
 		void insert_X();
 		void insert_O();
 		bool check_win();
