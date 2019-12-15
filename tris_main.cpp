@@ -18,7 +18,7 @@ int main()
 		std::cout<<std::endl;
 		std::cout<<"Want to play another game? Y/N:";
 		std::cin>>answer;
-	} while(answer=='Y');
+	} while(answer=='Y'||answer=='y');
 	return 0;
 }
 
